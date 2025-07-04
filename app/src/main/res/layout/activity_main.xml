@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/base_calc">
+
+    <ImageView
+        android:id="@+id/image_tela"
+        android:layout_width="wrap_content"
+        android:layout_height="215dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143"
+        app:srcCompat="@drawable/tela_calc" />
+
+    <ImageView
+        android:id="@+id/image_meu_logo"
+        android:layout_width="182dp"
+        android:layout_height="94dp"
+        android:layout_marginEnd="212dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/meu_logo_calc" />
+
+    <ImageView
+        android:id="@+id/image_base_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="382dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_tela"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/base_btn_calc" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_igual"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/igual_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_3"
+        app:layout_constraintStart_toEndOf="@+id/button_ponto" />
+
+    <ImageView
+        android:id="@+id/image_logo_cal"
+        android:layout_width="230dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_tela"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logo_calc" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_3"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/tres_calc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toEndOf="@+id/button_2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_2"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/dois_calc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_1"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/um_calc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_0"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/zero_calc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_4"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/quatro_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_5"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/cinco_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_1"
+        app:layout_constraintStart_toEndOf="@+id/button_4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_6"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/seis_calc"
+        android:background="@drawable/seis_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_2"
+        app:layout_constraintStart_toEndOf="@+id/button_5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_ponto"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ponto_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_3"
+        app:layout_constraintStart_toEndOf="@+id/button_6" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_on"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/on_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_nove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_base_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_out"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/out_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_del"
+        app:layout_constraintStart_toEndOf="@+id/button_on"
+        app:layout_constraintTop_toTopOf="@+id/image_base_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_elev"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/elevad_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_vezes"
+        app:layout_constraintStart_toEndOf="@+id/button_out"
+        app:layout_constraintTop_toTopOf="@+id/image_base_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_raiz"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/raiz_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_divis"
+        app:layout_constraintStart_toEndOf="@+id/button_elev"
+        app:layout_constraintTop_toTopOf="@+id/image_base_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_porce"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/porcen_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_paren_fech"
+        app:layout_constraintStart_toEndOf="@+id/button_raiz"
+        app:layout_constraintTop_toTopOf="@+id/image_base_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_paren_fech"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/paren_fech_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_paren_abr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toEndOf="@+id/button_divis" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_divis"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/divisao_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_menos"
+        app:layout_constraintStart_toEndOf="@+id/button_vezes" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_vezes"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/multipl_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_mais"
+        app:layout_constraintStart_toEndOf="@+id/button_del" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_del"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/del_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_8"
+        app:layout_constraintStart_toEndOf="@+id/button_nove" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_nove"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/nove_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_paren_abr"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/paren_abre_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_igual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button_menos" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_menos"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/menos_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_ponto"
+        app:layout_constraintStart_toEndOf="@+id/button_mais" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_mais"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/mais_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_6"
+        app:layout_constraintStart_toEndOf="@+id/button_8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_8"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/oito_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_5"
+        app:layout_constraintStart_toEndOf="@+id/button_7" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_7"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/sete_calc"
+        app:layout_constraintBottom_toTopOf="@+id/button_4"
+        app:layout_constraintStart_toStartOf="@+id/image_base_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
