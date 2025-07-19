@@ -127,7 +127,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonExit.setOnClickListener {
-            calculo.text = "${calculo.text}exit"
+            finish()
         }
 
         binding.buttonDel.setOnClickListener {
