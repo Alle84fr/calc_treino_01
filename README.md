@@ -9,7 +9,7 @@
   &nbsp;&nbsp;
   <a href="#passo_a_passo">Passo a passo</a>
     &nbsp;&nbsp;
-  <a href="autora">Autora</a>
+  <a href="#autora">Autora</a>
 </h4>
 <br>
 <h3 align="center">
