@@ -3,7 +3,7 @@
 <h4 align="center">
   <a href="#projeto">Projeto</a> 
   &nbsp;&nbsp;
-  <a href="#Inspiração">Inspiração</a>
+  <a href="#inspiração">Inspiração</a>
   &nbsp;&nbsp;
   <a href="#tecnologia">Tecnologia</a>
   &nbsp;&nbsp;
@@ -51,7 +51,7 @@
 
 <div>
     <h2 align="center">
-       <a name="Inspiração"></a> Inspiração
+       <a name="inspiração"></a> Inspiração
     </h2>
     <br>
     <br>
